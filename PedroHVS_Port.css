@@ -1,0 +1,25 @@
+body{
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Nome{
+    margin-left:3vw;
+    margin-top: 5vh;
+    font-family: "Jersey 20", sans-serif;
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+
+main{
+    margin-left:3vw;
+}
+
+main img{
+    
+    aspect-ratio: 3/4;
+    max-width: 16rem;
+}

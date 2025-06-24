@@ -1,0 +1,72 @@
+.Exibitor{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    width:min-content;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:space-around;
+    transform: matrix3d(
+        20, 0, 0, -0.08,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1
+    );
+    overflow-x: hidden;
+}
+
+
+/* Configuracoes dos slides */
+.slider{
+    height: var(--height);
+    width: 900px;
+    white-space: nowrap;
+    
+}
+
+.lista{
+    display:flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--Quantidade));
+    position: relative;
+}
+
+.slide{
+    background-color: var(--Cor);
+    box-shadow: 0px 0px 10px 0px var(--Cor);
+}
+
+/* Esquerda padrão */
+
+.slider .lista .slide{
+    height: var(--height);
+    width: var(--width);
+    position: absolute;
+    left:100%;
+    animation: ParaAEsquerda var(--Tempo) linear infinite;
+    animation-delay: calc( (var(--Tempo) / var(--Quantidade)) * (var(--posicao) - 1));
+}
+
+@keyframes ParaAEsquerda{
+    to{
+        left: calc(var(--width) * -1);
+    }
+}
+
+/* Direita */
+.slider.Esq .lista .slide{
+    height: var(--height);
+    width: var(--width);
+    position: absolute;
+    left: calc(var(--width) * -1);
+    animation: ParaADireita var(--Tempo) linear infinite;
+    animation-delay: calc( (var(--Tempo) / var(--Quantidade)) * (var(--posicao) - 1));
+}
+
+@keyframes ParaADireita{
+    to{
+        left: 100%;
+    }
+}
