@@ -1,7 +1,7 @@
 
 body{
-    font-family: var(--fonte_Padrao);
-    color: var(--Cor_Fonte_Total);
+    font-family: var(--fonte_Minima);
+    color: var(--Cor_Fonte_Normal);
     font-size: 1rem;
     background-color: var(--Cor_Escura);
     display: flex;
@@ -24,7 +24,7 @@ b{
 }
 
 .linha{
-    background-color:var(--Cor_MeioEscura);
+    background-color:var(--Cor_Meio);
     height: 5px;
     width: 95%;
     border-radius: 10px;
