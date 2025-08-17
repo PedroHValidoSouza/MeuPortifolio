@@ -1,0 +1,17 @@
+:root {
+    /* Cores base */
+    --Cor_Escura: hsl(0, 0%, 5%);
+    --Cor_MeioEscura: hsl(0, 0%, 10%);
+    --Cor_Meio: hsl(0, 0%, 15%);
+    --Cor_MeioClara: hsl(0, 0%, 20%);
+    --Cor_Clara: hsl(0, 0%, 25%);
+    
+    /* Cores de Fonte */
+    --Cor_Fonte_Total: hsl(0, 0%, 95%);
+    --Cor_Fonte_Normal: hsl(0, 0%, 75%);
+
+    /* Fontes */
+    --fonte_Padrao: "Google Sans Code", monospace;
+    --fonte_Especial: "Alfa Slab One", serif;
+    --fonte_Minima: "Roboto", sans-serif;
+}
